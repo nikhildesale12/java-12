@@ -1,0 +1,29 @@
+Java 12 introduces following new methods to String for easy formatting.
+
+indent(n) method
+Adjust the indention of each line of string based on argument passed.
+
+Usage
+string.indent(n)
+n > 0 - insert space at the begining of each line.
+n < 0 - remove space at the begining of each line.
+n < 0 and n < available spaces - remove all leading space of each line.
+n = 0 - no change.
+
+transform(Function<? super String,? extends R> f) method
+Transforms a string to give result as R.
+
+Usage
+String transformed = text.transform(value -> new StringBuilder(value).reverse().toString());
+
+
+Optional<String> describeConstable() method
+Returns Optional Object containing description of String instance.
+
+Usage
+Optional<String> optional = message.describeConstable();
+resolveConstantDesc(MethodHandles.Lookup lookup) method
+Returns descriptor instance string of given string.
+
+Usage
+String constantDesc = message.resolveConstantDesc(MethodHandles.lookup());

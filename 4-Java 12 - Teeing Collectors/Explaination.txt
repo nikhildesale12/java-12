@@ -1,0 +1,10 @@
+Java 12 introduces a new method to Collectors to perform two different operations on collection and then merge the result. 
+
+Folloiwng is the syntax of teeing method −
+
+Collector<T, ?, R> teeing(
+   Collector<? super T, ?, R1> downstream1,
+   Collector<? super T, ?, R2> downstream2, 
+   BiFunction<? super R1, ? super R2, R> merger
+)
+Here we are performing different functions on a collection and then merge the result using merger BiFunction.
