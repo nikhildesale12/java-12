@@ -1,0 +1,8 @@
+Java 12 introduces an easy way to compare two files using following syntax −
+
+public static long mismatch(Path path1, Path path2) throws IOException
+Where
+
+If there is no mismatch then 1L is returned else position of first mismatch is returned.
+
+Mismatch is accounted in case if file sizes are not matching or byte contents are not matching.

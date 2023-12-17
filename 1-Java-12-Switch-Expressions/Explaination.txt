@@ -1,0 +1,8 @@
+Java 12 introduces expressions to Switch statement and released it as a preview feature. 
+
+Following are the changes introduced in case of new switch with expressions −
+
+No fallthrough.
+No break statment required to prevent fallthrough.
+A single case can have multiple constant labels.
+Default case is compulsary now.
